@@ -6,7 +6,7 @@ aboveTen <- function(x){
             return(x[x > 10])
 }
 
-columMeans <- function(given_matrix) {
+columMeans <- function(given_matrix, removeNA = TRUE) {
             nrow_1 <- dim(given_matrix)[1]
             ncol_1 <- dim(given_matrix)[2]
             res <- numeric(ncol_1)
